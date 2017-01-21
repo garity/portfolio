@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+    background: #fffef2;
+}
+
+#main-container {
+	margin: 0;
+}
+
+#writing {
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	color: #2E93FF;
+	font-size: 80px;
+	padding: 20px;
+    margin: 0;
+}
+
+a {
+	color: #F75757;
+}
+
+#intro {	
+	padding: 10px;
+}
+#portfolio-container {
+	padding-top: 10%;
+	width: 100%;
+	font-family:'Catamaran', sans-serif;
+	background: #fffef2;
+}
+
+.description h1 {
+    color: #F75757;
+    border-bottom: 1px solid #2E93FF;
+    margin-right: 50px;
+}
+
+.project {
+	margin-bottom: 50px;
+}
+
+.thumbnail {
+	float: left;
+	width: 800px;
+}
+
+img {
+	width: 600px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.description {
+	float: left;
+	width: calc(100% - 840px);
+	margin: 20px;
+}
+
+.description p {
+	padding-right: 20px;
+	padding-right: 10%;
+	padding-bottom: 5%
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.button {
+    border-radius: 3px;
+    background: #2E93FF;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/*
+.button {
+    padding: 5px 10px;
+    display: inline;
+    background: #2E93FF url(button.png) repeat-x bottom;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-shadow: 1px 1px #666;
+    }
+.button:hover {
+    background-position: 0 -48px;
+    }
+.button:active {
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+    padding: 6px 10px 4px;
+    }*/
+
+/* Remove margins and padding from the list, and add a black background color */
+.navbar {
+	background-color: #fffef2;
+    opacity: .9;
+    position: fixed;
+    width: 100%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 15px;
+    overflow: hidden;   
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+	float: left;
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #2E93FF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #FFF;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+
+@media only screen and (max-width: 32rem) {
+    #writing {
+        font-size: 2.25rem;
+    }
+}
+
+@media only screen and (min-width: 32rem) {
+    #writing {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 40rem) {
+    #writing {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (min-width: 52rem) {
+    #writing {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    #writing {
+        padding: 4%;
+        font-size: 4.5rem;
+    }
+}
+
+
+/*colors: 
+portfolio background: FFF7F2
+intro background: 2E93FF
+intro font: FFF7F2
+intro links: FFFBBD */
+
