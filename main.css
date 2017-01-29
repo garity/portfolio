@@ -27,8 +27,12 @@ a {
 #intro {	
 	padding: 10px;
 }
+
+#babies{
+    padding-top: 10%;
+}
+
 #portfolio-container {
-	padding-top: 10%;
 	width: 100%;
 	font-family:'Catamaran', sans-serif;
 	background: #fffef2;
@@ -41,7 +45,7 @@ a {
 }
 
 .project {
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 }
 
 .thumbnail {
@@ -49,16 +53,12 @@ a {
 	width: 800px;
 }
 
-img {
+img, iframe {
 	width: 600px;
     margin-left: 10%;
     margin-top: 5%;
-}
-
-iframe {
     width: 600px;
-    margin-left: 10%;
-    margin-top: 5%;
+    height: 315px;
 }
 
 .description {
@@ -97,31 +97,6 @@ iframe {
     text-decoration: none;
 }
 
-/*
-.button {
-    padding: 5px 10px;
-    display: inline;
-    background: #2E93FF url(button.png) repeat-x bottom;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    text-shadow: 1px 1px #666;
-    }
-.button:hover {
-    background-position: 0 -48px;
-    }
-.button:active {
-    background-position: 0 top;
-    position: relative;
-    top: 1px;
-    padding: 6px 10px 4px;
-    }*/
-
-/* Remove margins and padding from the list, and add a black background color */
 .navbar {
 	background-color: #fffef2;
     opacity: .9;
@@ -136,7 +111,6 @@ ul.topnav {
     overflow: hidden;   
 }
 
-/* Float the list items side by side */
 ul.topnav li {
 	float: left;
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
@@ -160,22 +134,29 @@ ul.topnav li a:hover {background-color: #FFF;}
 ul.topnav li.icon {display: none;}
 
 
-
 @media only screen and (max-width: 32rem) {
     #writing {
         font-size: 2.25rem;
     }
-}
+
 
 @media only screen and (min-width: 32rem) {
     #writing {
         font-size: 3rem;
     }
+  
 }
 
 @media only screen and (min-width: 40rem) {
     #writing {
         font-size: 3.5rem;
+    }
+     .descritption {
+        width: 100%;
+        font-size: 1rem;
+    }
+     .thumbnail {
+        width: 100%;
     }
 }
 
