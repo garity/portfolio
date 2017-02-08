@@ -134,43 +134,109 @@ ul.topnav li a:hover {background-color: #FFF;}
 ul.topnav li.icon {display: none;}
 
 
+/* smallest do I need this one ever? */
 @media only screen and (max-width: 32rem) {
     #writing {
         font-size: 2.25rem;
     }
+    .project {
+        width: 90%;
+        margin: auto;
+    }
+    .description {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    iframe {
+        margin: auto;
+    }
 
 
-@media only screen and (min-width: 32rem) {
+}
+
+/* is this one ever gettin triggered */
+@media only screen and (min-width: 32rem) and (max-width: 40rem) {
     #writing {
         font-size: 3rem;
     }
-  
-}
-
-@media only screen and (min-width: 40rem) {
-    #writing {
-        font-size: 3.5rem;
+    .project {
+        width: 90%;
+        margin: auto;
+        padding-top: 5%;
     }
-     .descritption {
+     .description {
         width: 100%;
         font-size: 1rem;
     }
      .thumbnail {
         width: 100%;
     }
-}
-
-@media only screen and (min-width: 52rem) {
-    #writing {
-        font-size: 4rem;
+    iframe {
+        margin: auto;
     }
 }
 
+/*this is styling laptops, but they styles are relavant for mobile */
+@media only screen and (min-width: 40rem) and (max-width: 52rem)  {
+    #writing {
+        font-size: 3.5rem;
+    }
+    .project {
+        width: 90%;
+        margin: auto;
+        padding-top: 5%;
+    }
+    .description {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    iframe {
+        margin-left: 15%;
+    }
+    ul.topnav li a {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 52rem) and (max-width: 64rem) {
+    #writing {
+        font-size: 4rem;
+    }
+    .project {
+        width: 90%;
+        margin: auto;
+        padding-top: 5%;
+    }
+    .description {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    iframe {
+        margin-left: 15%;
+    }
+    ul.topnav li a {
+        font-size: 2rem;
+    }
+
+}
+
+/* largest */
 @media only screen and (min-width: 64rem) {
     #writing {
         padding: 4%;
         font-size: 4.5rem;
     }
+   
 }
 
 
