@@ -1,248 +1,257 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-	height: 100%;
-	margin: 0;
-    background: #fffef2;
+  height: 100%;
+  margin: 0;
+  background: #fffef2;
 }
 
 #main-container {
-	margin: 0;
+  margin: 0;
 }
 
 #writing {
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
-	color: #2E93FF;
-	font-size: 80px;
-	padding: 20px;
-    margin: 0;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  color: #2e93ff;
+  font-size: 80px;
+  padding: 15px;
+  margin: 0;
 }
 
 a {
-	color: #F75757;
+  color: #f75757;
 }
 
-#intro {	
-	padding: 10px;
+#intro {
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-#babies{
-    padding-top: 10%;
+#babies {
+  padding-top: 10%;
 }
 
 #portfolio-container {
-	width: 100%;
-	font-family:'Catamaran', sans-serif;
-	background: #fffef2;
+  width: 100%;
+  font-family: "Catamaran", sans-serif;
+  background: #fffef2;
 }
 
 .description h1 {
-    color: #F75757;
-    border-bottom: 1px solid #2E93FF;
-    margin-right: 50px;
+  color: #f75757;
+  border-bottom: 1px solid #2e93ff;
+  margin-right: 50px;
 }
 
 .project {
-	margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 .thumbnail {
-	float: left;
-	width: 800px;
+  float: left;
+  width: 800px;
 }
 
-img, iframe {
-	width: 600px;
-    margin-left: 10%;
-    margin-top: 5%;
-    width: 600px;
-    height: 315px;
+img,
+iframe {
+  width: 600px;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 600px;
+  height: 315px;
 }
 
 .description {
-	float: left;
-	width: calc(100% - 840px);
-	margin: 20px;
+  float: left;
+  width: calc(100% - 840px);
+  margin: 20px;
 }
 
 .description p {
-	padding-right: 20px;
-	padding-right: 10%;
-	padding-bottom: 5%
+  padding-right: 20px;
+  padding-right: 10%;
+  padding-bottom: 5%;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; 
-    display: table; 
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
 
 .button {
-    border-radius: 3px;
-    background: #2E93FF;
-    border: none;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 15px;
-    text-decoration: none;
+  border-radius: 3px;
+  background: #2e93ff;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .navbar {
-	background-color: #fffef2;
-    opacity: .9;
-    position: fixed;
-    width: 100%;
+  background-color: #fffef2;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
 }
 
 ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding-right: 15px;
-    overflow: hidden;   
+  list-style-type: none;
+  margin: 0;
+  padding-right: 15px;
+  overflow: hidden;
 }
 
 ul.topnav li {
-	float: left;
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  float: left;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 /* Style the links inside the list items */
 ul.topnav li a {
-    display: inline-block;
-    color: #2E93FF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
+  display: inline-block;
+  color: #2e93ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #FFF;}
+ul.topnav li a:hover {
+  background-color: #fff;
+}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
-
+ul.topnav li.icon {
+  display: none;
+}
 
 /* smallest do I need this one ever? */
 @media only screen and (max-width: 32rem) {
-    #writing {
-        font-size: 2.25rem;
-    }
-    .project {
-        width: 90%;
-        margin: auto;
-    }
-    .description {
-        width: 100%;
-        font-size: 1rem;
-    }
-    .thumbnail {
-        width: 100%;
-    }
-    iframe {
-        margin: auto;
-    }
-
-
+  #writing {
+    font-size: 2.25rem;
+  }
+  .project {
+    width: 90%;
+    margin: auto;
+  }
+  .description {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  iframe {
+    margin: auto;
+  }
 }
 
 /* is this one ever gettin triggered */
 @media only screen and (min-width: 32rem) and (max-width: 40rem) {
-    #writing {
-        font-size: 3rem;
-    }
-    .project {
-        width: 90%;
-        margin: auto;
-        padding-top: 5%;
-    }
-     .description {
-        width: 100%;
-        font-size: 1rem;
-    }
-     .thumbnail {
-        width: 100%;
-    }
-    iframe {
-        margin: auto;
-    }
+  #writing {
+    font-size: 3rem;
+  }
+  .project {
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+  }
+  .description {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  iframe {
+    margin: auto;
+  }
 }
 
 /*this is styling laptops, but they styles are relavant for mobile */
-@media only screen and (min-width: 40rem) and (max-width: 52rem)  {
-    #writing {
-        font-size: 3.5rem;
-    }
-    .project {
-        width: 90%;
-        margin: auto;
-        padding-top: 5%;
-    }
-    .description {
-        width: 100%;
-        font-size: 1rem;
-    }
-    .thumbnail {
-        width: 100%;
-    }
-    iframe {
-        margin-left: 15%;
-    }
-    ul.topnav li a {
-        font-size: 2rem;
-    }
-
+@media only screen and (min-width: 40rem) and (max-width: 52rem) {
+  #writing {
+    font-size: 3.5rem;
+  }
+  .project {
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+  }
+  .description {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  iframe {
+    margin-left: 15%;
+  }
+  ul.topnav li a {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 52rem) and (max-width: 64rem) {
-    #writing {
-        font-size: 4rem;
-    }
-    .project {
-        width: 90%;
-        margin: auto;
-        padding-top: 5%;
-    }
-    .description {
-        width: 100%;
-        font-size: 1rem;
-    }
-    .thumbnail {
-        width: 100%;
-    }
-    iframe {
-        margin-left: 15%;
-    }
-    ul.topnav li a {
-        font-size: 2rem;
-    }
-
+  #writing {
+    font-size: 4rem;
+  }
+  .project {
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+  }
+  .description {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  iframe {
+    margin-left: 15%;
+  }
+  ul.topnav li a {
+    font-size: 2rem;
+  }
 }
 
 /* largest */
 @media only screen and (min-width: 64rem) {
-    #writing {
-        padding: 4%;
-        font-size: 4.5rem;
-    }
-   
+  #writing {
+    padding: 4%;
+    font-size: 4.5rem;
+  }
 }
 
+@media only screen and (min-width: 90rem) {
+  #writing {
+    padding: 4%;
+    font-size: 8rem;
+  }
+}
 
 /*colors: 
 portfolio background: FFF7F2
 intro background: 2E93FF
 intro font: FFF7F2
 intro links: FFFBBD */
-
