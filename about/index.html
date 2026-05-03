@@ -13,6 +13,9 @@
   <header>
     <nav>
       <a href="../index.html" class="site-title">Garity Chapman</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links">
         
         <li><a href="../about/index.html" class="active">About</a></li>
@@ -21,25 +24,36 @@
         
         <li><a href="../dogs/index.html">Dogs</a></li>
         
+        <li><a href="../ocean/index.html">Ocean</a></li>
+        
         <li><a href="../still-life/index.html">Still Life</a></li>
         
       </ul>
     </nav>
   </header>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      var nav = document.querySelector('.nav-links');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    });
+  </script>
   <main>
     
-<article class="prose">
-  <p>Garity Chapman is a New York City based painter.  Graduated from Nova Scotia College of Art and Design in 2005. Her paintings explore color and moments of joy in every day life. </p>
-</article>
 
-<section class="series">
+<section class="series series--bio">
   <h2>About</h2>
-  <div class="scroll-paintings">
+  <div class="series-body">
     
-    <figure class="scroll-painting">
-      <img src="images/garity-chapman-about-1-full.jpg" alt="About 1" loading="lazy">
-    </figure>
+    <article class="prose"><p>Garity Chapman is a New York City based painter.  Graduated from Nova Scotia College of Art and Design in 2005. Her paintings explore color and moments of joy in every day life. </p></article>
     
+    <div class="scroll-paintings">
+      
+      <figure class="scroll-painting">
+        <img src="images/garity-chapman-about-1-full.jpg" alt="About 1" loading="lazy">
+      </figure>
+      
+    </div>
   </div>
 </section>
 

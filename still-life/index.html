@@ -13,6 +13,9 @@
   <header>
     <nav>
       <a href="../index.html" class="site-title">Garity Chapman</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links">
         
         <li><a href="../about/index.html">About</a></li>
@@ -21,41 +24,50 @@
         
         <li><a href="../dogs/index.html">Dogs</a></li>
         
+        <li><a href="../ocean/index.html">Ocean</a></li>
+        
         <li><a href="../still-life/index.html" class="active">Still Life</a></li>
         
       </ul>
     </nav>
   </header>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      var nav = document.querySelector('.nav-links');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    });
+  </script>
   <main>
     
-<article class="prose">
-  
-</article>
 
 <section class="series">
   <h2>Still Life</h2>
-  <div class="scroll-paintings">
+  <div class="series-body">
     
-    <figure class="scroll-painting">
-      <img src="images/garity-chapman-still-life-1-full.jpg" alt="Still Life 1" loading="lazy">
-    </figure>
-    
-    <figure class="scroll-painting">
-      <img src="images/garity-chapman-still-life-2-full.jpg" alt="Still Life 2" loading="lazy">
-    </figure>
-    
-    <figure class="scroll-painting">
-      <img src="images/garity-chapman-still-life-3-full.jpg" alt="Still Life 3" loading="lazy">
-    </figure>
-    
-    <figure class="scroll-painting">
-      <img src="images/garity-chapman-still-life-4-full.jpg" alt="Still Life 4" loading="lazy">
-    </figure>
-    
-    <figure class="scroll-painting">
-      <img src="images/garity-chapman-still-life-5-full.jpg" alt="Still Life 5" loading="lazy">
-    </figure>
-    
+    <div class="scroll-paintings">
+      
+      <figure class="scroll-painting">
+        <img src="images/garity-chapman-still-life-1-full.jpg" alt="Still Life 1" loading="lazy">
+      </figure>
+      
+      <figure class="scroll-painting">
+        <img src="images/garity-chapman-still-life-2-full.jpg" alt="Still Life 2" loading="lazy">
+      </figure>
+      
+      <figure class="scroll-painting">
+        <img src="images/garity-chapman-still-life-3-full.jpg" alt="Still Life 3" loading="lazy">
+      </figure>
+      
+      <figure class="scroll-painting">
+        <img src="images/garity-chapman-still-life-4-full.jpg" alt="Still Life 4" loading="lazy">
+      </figure>
+      
+      <figure class="scroll-painting">
+        <img src="images/garity-chapman-still-life-5-full.jpg" alt="Still Life 5" loading="lazy">
+      </figure>
+      
+    </div>
   </div>
 </section>
 

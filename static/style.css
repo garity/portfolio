@@ -247,25 +247,98 @@ footer {
   font-size: 0.85rem;
 }
 
+/* ── Side-by-side bio layout (desktop only) ── */
+
+.series--bio .series-body {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.series--bio .prose {
+  flex: 1;
+  min-width: 0;
+}
+
+.series--bio .scroll-paintings {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 600px) {
   nav {
     padding: 0.75rem 0.8rem 0;
-    line-height: 2.5em;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  header {
+    margin-bottom: 1.5rem;
   }
 
   main {
     padding: 0 1rem;
   }
 
+  /* Hamburger button */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 4px;
+    margin-left: auto;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 1px;
+    transition: opacity 0.15s;
+  }
+
+  /* Nav links hidden by default, shown when open */
   .nav-links {
-    gap: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 0 1rem;
+    border-top: 1px solid #e0e0de;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Undo side-by-side bio layout on mobile */
+  .series--bio .series-body {
+    display: block;
+  }
+
+  .series--bio .scroll-paintings {
+    flex: none;
+    max-width: 100%;
   }
 
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
+  }
+}
+
+@media (min-width: 601px) {
+  .nav-toggle {
+    display: none;
   }
 }
 
